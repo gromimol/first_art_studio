@@ -9,6 +9,16 @@
 		padding: 0;
 	}
 }
+.main-screen-open{
+	.header{
+		padding-bottom: 0;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+}
 .logo{
 	display: flex;
 	align-items: center;
