@@ -11,6 +11,8 @@ $(document).ready(function () {
 	// slider
 	$('.case-slider').slick({
 		appendArrows: '.case-slider-arrows',
+		prevArrow: '<span class="prev-arrow"></span>',
+		nextArrow: '<span class="next-arrow"></span>',
 		variableWidth: true
 	});
 
