@@ -1,9 +1,11 @@
 /*Header*/ 
 .header{
-	width: calc(100% - 11.25em);
+	width: 90%;
 	margin: 0 auto;
-	padding-top: 5.5em;
-	padding-bottom: 5.5em;
+	padding-top: 3.5em;
+	padding-bottom: 3.5em;
+	position: relative;
+	z-index: 3;
 	.container{
 		max-width: 100%;
 		padding: 0;
@@ -16,7 +18,7 @@
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		z-index: 2;
+		z-index: 3;
 	}
 }
 .logo{
@@ -79,6 +81,22 @@
 	img{
 		max-width: 100%;
 		transition: filter .3s;
+	}
+	&--border{
+		li{
+			padding: 0 .5em;
+			a{
+				display: block;
+				width: 3.75em;
+				height: 3.75em;
+				border-radius: 50%;
+				border: 1px solid #d5d7db;
+				&:hover{
+					background-color: var(--yellow);
+					border-color: var(--yellow);
+				}
+			}
+		}
 	}
 }
 .menu-btn{
