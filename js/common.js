@@ -16,4 +16,14 @@ $(document).ready(function () {
 		variableWidth: true
 	});
 
+	$('.clients-slider').slick({
+		appendArrows: '.clients-slider-arrows',
+		prevArrow: '<span class="prev-arrow"></span>',
+		nextArrow: '<span class="next-arrow"></span>',
+		vertical: true,
+		verticalSwiping: true,
+		rows: 2,
+		slidesPerRow: 3
+	});
+
 })

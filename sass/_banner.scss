@@ -1,1 +1,63 @@
 /*banner*/ 
+.banner-block{
+	background-color: var(--grey-bg);
+	position: relative;
+	overflow: hidden;
+	&:hover{
+		.container{
+			&::after{
+				background-color: #ffdd55;
+			}
+		}
+	}
+	.container{
+		background:transparent url('../img/bg/banner-text.png') left top no-repeat;
+		background-size: contain;
+		padding: 8.125em 20px;
+		position: relative;
+		&::after{
+			content: '';
+			width: 15em;
+			height: 15em;
+			border-radius: 50%;
+			background-color: #f5959f;
+			filter: blur(30px);
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 60%);
+			transition: all .3s;
+		}
+	}
+}
+.banner__title{
+	font-size: 4.5rem;
+	font-weight: 300;
+	margin-bottom: .5em;
+}
+.banner__subtitle{
+	font-size: 4.3rem;
+	font-weight: 200;
+	line-height: 1.2;
+	margin-bottom: 1.5em;
+	position: relative;
+	&::before{
+		content: '';
+		width: 2.3em;
+		height: 2.3em;
+		border-radius: 50%;
+		background-color: #ffdd55;
+		filter: blur(40px);
+		position: absolute;
+		top: 50%;
+		right: 12%;
+		transform: translateY(-50%);
+		z-index: 0;
+	}
+	h3{
+		margin-bottom: 0;
+		font-size: 1em;
+		position: relative;
+		z-index: 1;
+	}
+}

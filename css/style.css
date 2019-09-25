@@ -214,11 +214,41 @@ img {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
 .title {
   margin-bottom: 6.25em; }
   .title h2 {
     font-size: 3em;
     font-weight: 500; }
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding: 1.66em 2.9em;
+  border: 2px solid var(--yellow);
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .btn:hover {
+    background-color: var(--yellow); }
+
+.columns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .columns .column {
+    width: 20%;
+    border-right: 1px solid #f3f3f3; }
 
 /* Firefox 19+ */
 /* Firefox 18- */
@@ -1091,6 +1121,124 @@ img {
   background-image: url("../img/icons/arrow_right.png"); }
 
 /*banner*/
+.banner-block {
+  background-color: var(--grey-bg);
+  position: relative;
+  overflow: hidden; }
+  .banner-block:hover .container::after {
+    background-color: #ffdd55; }
+  .banner-block .container {
+    background: transparent url("../img/bg/banner-text.png") left top no-repeat;
+    background-size: contain;
+    padding: 8.125em 20px;
+    position: relative; }
+    .banner-block .container::after {
+      content: '';
+      width: 15em;
+      height: 15em;
+      border-radius: 50%;
+      background-color: #f5959f;
+      -webkit-filter: blur(30px);
+              filter: blur(30px);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 60%);
+              transform: translate(-50%, 60%);
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+
+.banner__title {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin-bottom: .5em; }
+
+.banner__subtitle {
+  font-size: 4.3rem;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 1.5em;
+  position: relative; }
+  .banner__subtitle::before {
+    content: '';
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    background-color: #ffdd55;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 0; }
+  .banner__subtitle h3 {
+    margin-bottom: 0;
+    font-size: 1em;
+    position: relative;
+    z-index: 1; }
+
+/*clients*/
+.clients {
+  position: relative;
+  padding: 6.25em 0;
+  overflow: hidden; }
+  .clients:hover .clients-img {
+    -webkit-filter: drop-shadow(0 0 10px rgba(255, 221, 85, 0.5));
+            filter: drop-shadow(0 0 10px rgba(255, 221, 85, 0.5)); }
+  .clients .container {
+    position: relative;
+    z-index: 1; }
+
+.clients-slider .slick-track > .slick-slide > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.clients-slider__item {
+  margin-bottom: 6.25em; }
+  .clients-slider__item:hover img {
+    -webkit-filter: blur(1px);
+            filter: blur(1px); }
+  .clients-slider__item img {
+    margin: 0 auto;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+
+.clients-slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .clients-slider-arrows .prev-arrow {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .clients-slider-arrows .next-arrow {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.clients-img {
+  position: absolute;
+  right: 30px;
+  bottom: -6.25em;
+  z-index: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
 /*Footer*/
 /*media*/
 @media (max-width: 1400px) {
