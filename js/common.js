@@ -26,4 +26,12 @@ $(document).ready(function () {
 		slidesPerRow: 3
 	});
 
+	$('.service-slider').slick({
+		fade: true,
+		appendArrows: '.service-slider-arrows',
+		prevArrow: '<span class="prev-arrow slick-arrow--white"></span>',
+		nextArrow: '<span class="next-arrow slick-arrow--white"></span>',
+		adaptiveHeight: true
+	});
+
 })

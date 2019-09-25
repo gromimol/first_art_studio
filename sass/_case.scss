@@ -80,28 +80,3 @@
 		background-color: #fff;
 	}
 }
-.prev-arrow,
-.next-arrow{
-	display: block;
-	position: relative;
-	width: 3.75em;
-	height: 3.75em;
-	background-color: #000;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
-	margin-bottom: .75em;
-	border: 2px solid #000;
-	cursor: pointer;
-	transition: all .3s;
-	&:hover{
-		background-color: var(--red);
-		border-color: var(--red);
-	}
-}
-.prev-arrow{
-	background-image: url('../img/icons/arrow_left.png');
-}
-.next-arrow{
-	background-image: url('../img/icons/arrow_right.png');
-}
