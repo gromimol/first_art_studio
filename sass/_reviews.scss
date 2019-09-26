@@ -9,17 +9,19 @@
 		}
 	}
 }
+
 .reviews__list{
 	margin: 0 -.8em 4em;
+	flex-wrap: wrap;
 	li{
 		width: 20%;
+		min-width: 180px;
 		padding: 0 .8em;
 		margin-bottom: 1.6em;
 	}
 }
 .reviews__item{
 	display: block;
-	height: 20em;
 	background-color: #fff;
 	position: relative;
 	&::after{

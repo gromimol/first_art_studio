@@ -48,7 +48,27 @@ $(document).ready(function () {
 		appendArrows: '.advantages-slider-arrows',
 		prevArrow: '<span class="prev-arrow slick-arrow--white"></span>',
 		nextArrow: '<span class="next-arrow slick-arrow--white"></span>',
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	// input

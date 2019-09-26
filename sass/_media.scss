@@ -151,6 +151,26 @@
 	.contact-form .btn{
 		font-size: 16px;
 	}
+	.title-row .mouse{
+		display: none;
+	}
+	.team__item{
+		height: auto;
+	}
+	.team__item img{
+		height: 100%;
+	}
+	.member-descr{
+		transform: translateY(0);
+		visibility: visible;
+	}
+	.reviews-container{
+		overflow-y: auto;
+	}
+	.reviews__list{
+		min-width: 1000px;
+		flex-wrap: nowrap;
+	}
 }
 /*1360*/ 
 
@@ -227,8 +247,37 @@
 			}
 		}
 	}
-	.footer__bottom{
+	.footer__bottom,
+	.about-descr__content p{
 		font-size: 1.4rem;
+	}
+	.subtitle-text{
+		font-size: 2rem;
+		margin-bottom: 2em;
+	}
+	.about-descr__content h4{
+		font-size: 2.4rem;
+		&::before{
+			font-size: .75em;
+		}
+	}
+	.title p{
+		font-size: 2rem;
+	}
+	.advantage-slider__content::after{
+		display: none;
+	}
+	.advantage-slider__content h4{
+		font-size: 18px;
+		&::before{
+			font-size: .75em;
+		}
+		&::after{
+			display: none;
+		}
+	}
+	.advantage-slider__content p{
+		font-size: 12px;
 	}
 }
 /*1024*/ 
@@ -401,7 +450,7 @@
 		text-align: center;
 	}
 	.btn{
-		padding: 1.3em 2.5em;
+		padding: 1.3em 2.5em 1.2em;
 	}
 	.banner-block .container{
 		padding: 50px 20px;
@@ -538,6 +587,57 @@
 	.social--border li{
 		padding: 0 5px;
 	}
+	.about-top__descr h4{
+		font-size: 2.5rem;
+		margin-bottom: 1em;
+	}
+	.subtitle-text{
+		font-size: 3.4rem;
+	}
+	.about-descr__list{
+		justify-content: center;
+		li{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.about-descr__content h4{
+		font-size: 18px;
+	}
+	.about-descr__content p{
+		font-size: 14px;
+	}
+	.about-descr .title-row{
+		margin-bottom: 20px;
+	}
+	.member-descr .name{
+		font-size: 1.8rem;
+	}
+	.member-descr .post{
+		font-size: 1.5rem;
+	}
+	.team__list li{
+		width: 33.333%;
+		height: 200px;
+		margin-bottom: 10px;
+	}
+	.team__item{
+		height: 100%;
+	}
+	.advantage-slider__content{
+		text-align: center;
+	}
+	.advantage-slider__content h4::before{
+		align-self: center;
+		margin-bottom: 4px;
+	}
+	.title p{
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.advantages-slider-arrows{
+		margin-top: 40px;
+	}
 } 
 /*767*/ 
 
@@ -583,6 +683,16 @@
 			width: 60%;
 		}
 	}
+	.team__list li{
+		width: 50%;
+		height: 200px;
+	}
+	.member-descr .name{
+		font-size: 14px;
+	}
+	.member-descr .post{
+		font-size: 10px;
+	}
 }
 /*420*/ 
 
@@ -598,6 +708,10 @@
 				margin-bottom: 20px;
 			}
 		}
+	}
+	.team__list li{
+		width: 100%;
+		height: 240px;
 	}
 }
 /*360px*/
