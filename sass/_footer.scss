@@ -2,9 +2,6 @@
 .footer{
 	background-color: #191919;
 	color: #fff;
-	a{
-		color: #fff;
-	}
 	.social{
 		li{
 			a:hover{
@@ -26,6 +23,7 @@
 .footer__descr{
 	.logo{
 		margin-bottom: 1.6em;
+		color: #fff;
 	}
 	p{
 		color: rgba(#fefefe, .3);
@@ -42,6 +40,7 @@
 	font-weight: 300;
 	line-height: 2.5;
 	a{
+		color: #fff;
 		&:hover{
 			color: var(--yellow);
 		}

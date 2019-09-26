@@ -23,7 +23,15 @@ $(document).ready(function () {
 		vertical: true,
 		verticalSwiping: true,
 		rows: 2,
-		slidesPerRow: 3
+		slidesPerRow: 3,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesPerRow: 2
+				}
+			}
+		]
 	});
 
 	$('.service-slider').slick({
@@ -44,5 +52,12 @@ $(document).ready(function () {
 			$this.removeClass('input--filled');      
 		}
 	});
+
+	// submenu on mobile
+	$('.drop-li > a').on('click',function (e) {
+		e.preventDefault();
+
+		$('.drop-li').toggleClass('active');
+	})
 
 })

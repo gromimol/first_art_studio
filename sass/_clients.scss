@@ -14,6 +14,8 @@
 	}
 } 
 .clients-slider{
+	position: relative;
+	z-index: 2;
 	.slick-track {
 		& > .slick-slide > div{
 			display: flex;
@@ -40,6 +42,8 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	z-index: 2;
 	.prev-arrow{
 		transform: rotate(90deg);
 	}

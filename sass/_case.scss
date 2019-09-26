@@ -30,6 +30,9 @@
 		width: 42em;
 		.slider-img{
 			top: 0;
+			height: 100%;
+			max-height: none;
+			object-fit: contain;
 		}
 	}
 	&:hover{
@@ -57,6 +60,8 @@
 	position: absolute;
 	right: 0;
 	top: 2em;
+	max-height: 60%;
+	object-fit: contain;
 }
 .case-slider__data{
 	display: flex;

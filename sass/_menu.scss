@@ -18,6 +18,16 @@
 		opacity: 1;
 		visibility: visible;
 	}
+	.social{
+		li{
+			a{
+				&:hover{
+					border-color: #fff !important;
+					background-color: #fff !important;
+				}
+			}
+		}
+	}
 }
 .menu-block__content{
 	width: 50%;
@@ -48,6 +58,7 @@
 	.drop-li{
 		display: flex;
 		align-items: center;
+		color: var(--black);
 		cursor: pointer;
 		&::after{
 			content: '';
@@ -58,11 +69,7 @@
 			opacity: 0;
 			transition: opacity .3s;
 		}
-		&:hover{
-			&::after{
-				opacity: 1;
-			}
-		}
+		
 	}
 }
 .submenu{
@@ -94,6 +101,9 @@
 				opacity: 1;
 				transform: translateX(0);
 				visibility: visible;
+			}
+			&::after{
+				opacity: 1;
 			}
 		}
 	}
