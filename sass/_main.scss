@@ -2,7 +2,7 @@
 	--black: #101010;
 	--grey: #818181;
 	--yellow: #ffdd55;
-	--red: #de5558;
+	--red: #f5939d;
 
 	--grey-bg: #f7f8f9;
 	--black-bg: #191919;
@@ -39,11 +39,18 @@ img{
 	max-width: 1480px;
 	margin: 0 auto;
 	padding: 0 20px;
+	&.no-padding{
+		padding: 0;
+	}
 	&--lt{
 		max-width: 1180px;
 	}
 	&--fluid{
 		max-width: 100%;
+		&.no-padding{
+			width: 90%;
+			margin: 0 auto;
+		}
 	}
 }
 .main{
@@ -99,11 +106,26 @@ img{
 .text-right{
 	text-align: right;
 }
+.title-row{
+	.title{
+		margin-bottom: 0;
+	}
+	.mouse{
+		position: relative;
+		left: 0;
+		transform: translate(0, 0);
+	}
+}
 .title{
 	margin-bottom: 6.25em;
 	h2{
 		font-size: 3em;
 		font-weight: 500;
+	}
+	p{
+		font-size: 1.5rem;
+		margin-top: 1.5em;
+		font-weight: 300;
 	}
 }
 
@@ -196,6 +218,11 @@ h4{
 			border-color: var(--red);
 		}
 	}
+	&.slick-disabled{
+		cursor: default;
+		pointer-events: none;
+		opacity: .3;
+	}
 }
 .prev-arrow{
 	background-image: url('../img/icons/arrow_left.png');
@@ -252,6 +279,8 @@ h4{
 		opacity: 0;
 	}
 }
+
+
 
 ::-webkit-input-placeholder {  }
 ::-moz-placeholder          {  } /* Firefox 19+ */

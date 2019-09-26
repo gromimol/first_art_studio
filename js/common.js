@@ -42,6 +42,15 @@ $(document).ready(function () {
 		adaptiveHeight: true
 	});
 
+	$('.advantages-slider').slick({
+		slidesToShow: 4,
+		infinite: false,
+		appendArrows: '.advantages-slider-arrows',
+		prevArrow: '<span class="prev-arrow slick-arrow--white"></span>',
+		nextArrow: '<span class="next-arrow slick-arrow--white"></span>',
+		adaptiveHeight: true
+	});
+
 	// input
 	$('.input__field').change(function() {
 		var $this = $(this);

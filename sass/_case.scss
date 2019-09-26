@@ -1,6 +1,9 @@
 /*case*/
 .case{
 	padding-top: 2em;
+	&--padding{
+		padding: 6.5em 0;
+	}
 } 
 .case-slider-arrows{
 	width: 25%;
