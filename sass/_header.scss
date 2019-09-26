@@ -86,11 +86,16 @@
 		li{
 			padding: 0 .5em;
 			a{
-				display: block;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				width: 3.75em;
 				height: 3.75em;
 				border-radius: 50%;
 				border: 1px solid #d5d7db;
+				img{
+					height: 20px;
+				}
 				&:hover{
 					background-color: var(--yellow);
 					border-color: var(--yellow);

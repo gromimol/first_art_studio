@@ -40,7 +40,7 @@ img{
 	margin: 0 auto;
 	padding: 0 20px;
 	&--lt{
-		max-width: 1210px;
+		max-width: 1180px;
 	}
 	&--fluid{
 		max-width: 100%;
@@ -108,19 +108,19 @@ img{
 }
 
 h1{
-	font-size: 4em;
+	font-size: 4rem;
 	font-weight: 700;
 }
 h2{
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: 500;
 }
 h3{
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	font-weight: 500;
 }
 h4{
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: 300;
 }
 
@@ -131,6 +131,7 @@ h4{
 	padding: 1.66em 2.9em;
 	border: 2px solid var(--yellow);
 	border-radius: 50px;
+	background-color: transparent;
 	cursor: pointer;
 	outline: none;
 	appearance: none;
@@ -237,6 +238,12 @@ h4{
 		opacity: 0;
 	}
 
+}
+
+@keyframes rotate{
+	100%{
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
 }
 
 ::-webkit-input-placeholder {  }

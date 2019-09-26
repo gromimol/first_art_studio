@@ -1,0 +1,33 @@
+/*features*/ 
+.features{
+	position: relative;
+	background-color: var(--grey-bg);
+	padding: 6.25em 0;
+	.container{
+		position: relative;
+		z-index: 1;
+	}
+}
+.features__list{
+	border-top: 1px solid #f3f3f3;
+	li{
+		width: 33.3333%;
+		height: 13.125em;
+		border-bottom: 1px solid #f3f3f3;
+		transition: all .3s;
+		&:hover{
+			z-index: 1;
+			box-shadow: -20px 20px 40px rgba(#000, .1);
+			}
+		&:nth-child(odd){
+			background-color: #fff;
+		}
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+
+		}
+	}
+}
