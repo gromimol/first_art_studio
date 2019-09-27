@@ -1,4 +1,14 @@
 /*media*/
+
+@media(max-width: 1600px){
+	.container--fluid.no-padding{
+		width: 100%;
+		padding: 0 20px;
+	}
+	.individual .container--fluid{
+		padding-top: 6.25em;
+	}
+}
 @media(max-width: 1400px){
 	html{
 		font-size: .8vw;

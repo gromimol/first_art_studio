@@ -78,6 +78,13 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.individual-slider').slick({
+		slidesToShow: 2,
+		appendArrows: '.individual-slider__arrows',
+		prevArrow: '<span class="prev-arrow"></span>',
+		nextArrow: '<span class="next-arrow"></span>'
+	});
+
 	// input
 	$('.input__field').change(function() {
 		var $this = $(this);

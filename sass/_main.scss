@@ -110,13 +110,36 @@ img{
 	text-align: right;
 }
 .title-row{
+	position: relative;
+	overflow: hidden;
+	&--bg{
+		padding-bottom: 4.375em;
+		margin-bottom: 0 !important;
+		&::after{
+			content: '';
+			width: 10em;
+			height: 10em;
+			border-radius: 50%;
+			background-color: #f6a1aa;
+			position: absolute;
+			right: 15%;
+			bottom: 0;
+			transform: translateY(70%);
+			filter: blur(30px);
+			z-index: 0;
+		}
+	}
+	
 	.title{
 		margin-bottom: 0;
+		position: relative;
+		z-index: 1;
 	}
 	.mouse{
 		position: relative;
 		left: 0;
 		transform: translate(0, 0);
+		z-index: 1;
 	}
 }
 .title{
@@ -129,6 +152,7 @@ img{
 		font-size: 1.5rem;
 		font-weight: 200;
 		line-height: 1.5;
+		max-width: 75%
 	}
 	p{
 		font-size: 1.5rem;
