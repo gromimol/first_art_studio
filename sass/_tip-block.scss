@@ -1,0 +1,39 @@
+/*tip-block*/ 
+.tip-block{
+	margin-top: 6.25em;
+	padding: 6.25em 0 3.125em;
+	position: relative;
+	background-color: var(--grey-bg);
+	.container--fluid{
+		position: relative;
+		z-index: 1;
+	}
+}
+.order-list{
+	font-size: 1.125rem;
+	margin: 0 -3em;
+	justify-content: center;
+	counter-reset: number;
+	li{
+		width: 33.333%;
+		padding: 0 3em;
+		margin-bottom: 3em;
+		line-height: 1.4;
+		font-weight: 300;
+		&::before{
+			content: '0'counter(number);
+			counter-increment: number;
+			display: inline-flex;
+			align-items: center;
+			font-size: 3.33em;
+			border-radius: 50%;
+			width: 1.5em;
+			height: 1.5em;
+			background:linear-gradient(to right, transparent 10%, #ffdd55);
+			background-position: center;
+		}
+		p{
+			margin-top: 1em;
+		}
+	}
+}

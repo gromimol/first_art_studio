@@ -82,7 +82,15 @@ $(document).ready(function () {
 		slidesToShow: 2,
 		appendArrows: '.individual-slider__arrows',
 		prevArrow: '<span class="prev-arrow"></span>',
-		nextArrow: '<span class="next-arrow"></span>'
+		nextArrow: '<span class="next-arrow"></span>',
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	// input

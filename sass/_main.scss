@@ -3,6 +3,7 @@
 	--grey: #818181;
 	--yellow: #ffdd55;
 	--red: #f5939d;
+	--blue: #4198f9;
 
 	--grey-bg: #f7f8f9;
 	--black-bg: #191919;
@@ -156,8 +157,10 @@ img{
 	}
 	p{
 		font-size: 1.5rem;
-		margin-top: 1.5em;
+		margin: 1.5em auto 0;
 		font-weight: 300;
+		line-height: 1.4;
+		max-width: 90%;
 	}
 }
 
@@ -222,7 +225,12 @@ h4{
 			color: var(--black);
 		}
 	}
-	
+	&--blue{
+		border-color: var(--blue);
+		&:hover{
+			border-color: var(--yellow);
+		}
+	}
 }
 
 .columns{

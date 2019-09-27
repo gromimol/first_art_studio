@@ -4,9 +4,20 @@
 	.container--fluid.no-padding{
 		width: 100%;
 		padding: 0 20px;
+		.container--lg{
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 	.individual .container--fluid{
 		padding-top: 6.25em;
+	}
+	.individual-descr{
+		margin: 0 -10px;
+		li{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 }
 @media(max-width: 1400px){
@@ -84,7 +95,9 @@
 	.calculator__total{
 		justify-content: center;
 	}
-	.calculator__total__title{
+	.calculator__total__title,
+	.rate__title,
+	.rate-price .old-price, .rate-price .current-price{
 		font-size: 2.2rem;
 	}
 	.calculator__total__summa{
@@ -93,6 +106,20 @@
 	.agree label,
 	.notice{
 		font-size: 1.1rem;
+	}
+	.individual__descr p,
+	.order-list,
+	.about-us__list li,
+	.rate__list li,
+	.rate-warranty,
+	.difference__descr p{
+		font-size: 1.5rem;
+	}
+	.difference__descr p{
+		line-height: 2;
+	}
+	.rate-btn .btn{
+		font-size: 16px;
 	}
 }
 /*1400*/ 
@@ -210,6 +237,9 @@
 	}
 	.accordeon__title{
 		font-size: 1.7rem;
+	}
+	.title h4{
+		max-width: 100%;
 	}
 }
 /*1360*/ 
@@ -358,6 +388,18 @@
 	.calculator__total__summa{
 		font-weight: 500;
 	}
+	.individual-descr__item h4{
+		font-size: 2.4rem;
+	}
+	.individual-descr__item p{
+		font-size: 2rem;
+	}
+	.difference__descr h2{
+		font-size: 4rem;
+	}
+	.difference__descr p{
+		font-size: 1.8rem;
+	}
 }
 /*1024*/ 
 @media(max-width: 768px){
@@ -414,7 +456,11 @@
 	}
 	.calculator__price__item,
 	.calculator__inputs,
-	.calculator__total{
+	.calculator__total,
+	.difference__descr,
+	.difference__img,
+	.order-list li,
+	.rate-block{
 		width: 100%;
 	}
 	.accordeon__title{
@@ -424,7 +470,8 @@
 	.accordeon__content p{
 		font-size: 15px;
 	}
-	.calculator__form{
+	.calculator__form,
+	.difference__content{
 		flex-direction: column;
 	}
 	.calculator__total__title{
@@ -436,6 +483,69 @@
 	.calculator__inputs,
 	.calculator__total{
 		padding: 30px 15px;
+	}
+	.individual__content{
+		height: 48em;
+	}
+	.individual__descr h4{
+		font-size: 3rem;
+	}
+	.individual__descr p{
+		font-size: 2.4rem;
+		font-weight: 400;
+	}
+	.difference__descr h2{
+		font-size: 6rem;
+	}
+	.difference__descr p,
+	.order-list{
+		font-size: 15px;
+	}
+	.order-list li{
+		text-align: center;
+	}
+	.about-us__list li{
+		font-size: 2.4rem;
+		padding: 2em 1em 1em 3em;
+	}
+	.about-us__notice{
+		font-size: 1.8em;
+		padding: 1em;
+		br{
+			display: none;
+		}
+	}
+	.about-us__decor::before{
+		width: 6em;
+		height: 6em;
+	}
+	.rate-block{
+		margin-bottom: 30px;
+	}
+	.rate__title{
+		font-size: 30px;
+		padding: .75em .5em;
+	}
+	.title p{
+		font-size: 3rem;
+	}
+	.rate-price{
+		padding: 25px 15px;
+	}
+	.rate-price .old-price, .rate-price .current-price{
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.rate__list li,
+	.rate-warranty,
+	.rate-btn .btn{
+		font-size: 18px;
+	}
+	.rate-btn{
+		padding: 30px 0;
+	}
+	.rate__title--yellow{
+		font-size: 40px;
 	}
 }
 /*768*/ 
@@ -753,6 +863,13 @@
 			display: none;
 		}
 	}
+	.accordeon{
+		&--tip{
+			.accordeon__title__text{
+				text-align: center;
+			}
+		}
+	}
 	.accordeon__title{
 		font-size: 16px;
 	}
@@ -765,6 +882,41 @@
 		.h1{
 			font-size: 6.5rem;
 		}
+	}
+	.individual-descr{
+		margin: 0;
+		li{
+			padding: 0 5px;
+		}
+	}
+	.individual-descr__item h4{
+		font-size: 3rem;
+	}
+	.individual-descr__item p{
+		font-size: 2.7rem;
+	}
+	.individual-slider{
+		margin-bottom: 20px;
+	}
+	.about-us{
+		padding: 40px 0;
+	}
+	.rate-price{
+		padding: 20px 15px;
+	}
+	.rate-price .old-price, .rate-price .current-price{
+		font-size: 24px;
+	}
+	.rate__list li,
+	.rate-warranty,
+	.rate-btn .btn{
+		font-size: 16px;
+	}
+	.rate-btn{
+		padding: 20px 0;
+	}
+	.rate__title--yellow{
+		font-size: 30px;
 	}
 } 
 /*767*/ 
@@ -821,6 +973,27 @@
 	.member-descr .post{
 		font-size: 10px;
 	}
+	.individual__content{
+		height: 60em;
+	}
+	.individual__descr h4{
+		font-size: 4rem;
+	}
+	.individual__descr p{
+		font-size: 3rem;
+	}
+	.difference__descr h2{
+		font-size: 8rem;
+	}
+	.about-us__list li{
+		width: 100%;
+	}
+	.about-us__list li{
+		font-size: 4rem;
+	}
+	.inner-top__content .h1{
+		font-size: 7rem;
+	}
 }
 /*420*/ 
 
@@ -840,6 +1013,32 @@
 	.team__list li{
 		width: 100%;
 		height: 240px;
+	}
+	.individual__content{
+		height: 70em;
+	}
+	.individual__descr h4{
+		font-size: 5rem;
+	}
+	.individual__descr p{
+		font-size: 4rem;
+	}
+	.individual-descr li{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.first-let{
+		font-size: 10rem;	
+	}
+	.individual-descr__item h4{
+		font-size: 4rem;
+	}
+	.individual-descr__item p{
+		font-size: 3rem;
+	}
+	.about-us__list li{
+		font-size: 5rem;
 	}
 }
 /*360px*/

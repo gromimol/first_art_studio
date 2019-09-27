@@ -17,6 +17,21 @@
 		}
 
 	}
+	&--tip{
+		.accordeon__title{
+			border: 1px solid var(--black);
+		}
+		.accordeon__title__text::before{
+			display: none;
+		}
+		.accordeon__title__icon{
+			background-color: var(--yellow);
+			&::before,
+			&::after{
+				background-color: #101010;
+			}
+		}
+	}
 }
 .accordeon__title{
 	display: flex;
