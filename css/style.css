@@ -2572,6 +2572,87 @@ textarea.input__field {
     line-height: 1.5; }
 
 /*individual-descr*/
+.individual-descr {
+  padding: 4em 0; }
+
+.individual-descr {
+  margin: 0 -4.375em; }
+  .individual-descr li {
+    width: 33.3333%;
+    padding: 0 4.375em;
+    margin-bottom: 4.375em; }
+
+.individual-descr__item:hover .first-letter::after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); }
+.individual-descr__item h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: .4em; }
+.individual-descr__item p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5; }
+
+.first-let {
+  display: inline-block;
+  font-size: 7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  background: url(../img/bg/text-bg.jpg) 48% 60% no-repeat;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  position: relative; }
+  .first-let::after {
+    content: '';
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, transparent), to(#ffdd55));
+    background: linear-gradient(to bottom right, transparent 20%, #ffdd55);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: all 5s;
+    transition: all 5s; }
+
+/*difference*/
+.difference {
+  background: #101010 url("../img/bg/difference_bg.png") left top no-repeat;
+  background-size: cover;
+  padding: 6.25em 0 4em;
+  margin-bottom: 3em;
+  color: #fff; }
+
+.difference__descr {
+  width: 49%; }
+  .difference__descr h2 {
+    line-height: 1;
+    margin-bottom: .5em; }
+  .difference__descr p {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.125em; }
+    .difference__descr p:not(:last-child) {
+      margin-bottom: 2em; }
+
+.difference__img {
+  width: 49%;
+  -webkit-transform: translateY(7.2em);
+          transform: translateY(7.2em); }
+  .difference__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 /*Footer*/
 .footer {
   background-color: #191919;
