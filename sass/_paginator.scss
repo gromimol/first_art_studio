@@ -1,0 +1,42 @@
+/*paginator*/ 
+.paginator{
+	justify-content: center;
+	margin: 3em 0 0;
+	li{
+		color: var(--red);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.75em;
+		height: 3.75em;
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			font-size: 1rem;
+			font-weight: 300;
+			border: 2px solid transparent;
+			&.active,
+			&:hover{
+				border-color: #edf0f5;
+			}
+		}
+	}
+}
+.prev-page,
+.next-page{
+	background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.prev-page{
+	background-image: url('../img/icons/arrow_left.png');
+	transform: translateX(-1em);
+}
+.next-page{
+	background-image: url('../img/icons/arrow_right.png');
+	transform: translateX(1em);
+}

@@ -232,7 +232,10 @@
 		min-width: 1000px;
 		flex-wrap: nowrap;
 	}
-	.radio label, .checkbox label{
+	.radio label, .checkbox label,
+	.sort li a,
+	.aside__menu,
+	.aside__title{
 		font-size: 1.5rem;
 	}
 	.accordeon__title{
@@ -240,6 +243,12 @@
 	}
 	.title h4{
 		max-width: 100%;
+	}
+	.articles-block .aside{
+		width: 250px;
+	}
+	.tags__list li a{
+		font-size: 1.1rem;
 	}
 }
 /*1360*/ 
@@ -397,11 +406,32 @@
 	.difference__descr h2{
 		font-size: 4rem;
 	}
-	.difference__descr p{
+	.difference__descr p,
+	.sort li a{
 		font-size: 1.8rem;
 	}
 }
 /*1024*/ 
+@media(max-width: 990px){
+	.article-item{
+		width: 50%;
+	}
+	.article__title{
+		font-size: 2rem;
+	}
+	.article__data .date,
+	.article__data .btn{
+		font-size: 1.5rem;
+	}
+	.paginator li{
+		width: 35px;
+		height: 35px;
+		a{
+			font-size: 12px;
+		}
+	}
+}
+/*990*/ 
 @media(max-width: 768px){
 	.main-screen__title {
 		.h1{
@@ -547,6 +577,14 @@
 	.rate__title--yellow{
 		font-size: 40px;
 	}
+	.portfolio{
+		padding-top: 30px;
+	}
+	.sort li a{
+		font-size: 12px;
+		padding: 8px 15px;
+		border-color: var(--yellow);
+	}
 }
 /*768*/ 
 @media(max-width: 767px){
@@ -634,7 +672,8 @@
 		align-items: center;
 	}
 	.case-row,
-	.statistic__content{
+	.statistic__content,
+	.articles-block{
 		flex-direction: column;
 	}
 	.case-slider-arrows,
@@ -918,6 +957,50 @@
 	.rate__title--yellow{
 		font-size: 30px;
 	}
+	.portfolio__item{
+		width: 50%;
+		&--md{
+			width: 100%;
+		}
+	}
+	.portfolio__list{
+		margin-bottom: 40px;
+	}
+	.portfolio{
+		padding-bottom: 40px;
+	}
+	.article-item,
+	.articles-block .aside{
+		width: 100%;
+	}
+	.article__img{
+		height: 160px;
+	}
+	.article__descr{
+		padding: 10px;
+	}
+	.article__title{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.article__data .date, .article__data .btn,
+	.tags__title{
+		font-size: 13px;
+	}
+	.articles-block .aside{
+		padding: 15px;
+		margin-top: 40px;
+	}
+	.aside__title,
+	.aside__menu{
+		font-size: 15px;
+	}
+	.aside__item{
+		margin-bottom: 25px;
+	}
+	.tags__list li a{
+		font-size: 12px;
+	}
 } 
 /*767*/ 
 
@@ -994,6 +1077,15 @@
 	.inner-top__content .h1{
 		font-size: 7rem;
 	}
+	.portfolio__item{
+		width: 100%;
+		.slider-img{
+			max-height: 90%
+		}
+	}
+	.case-slider__item--lg .slider-img{
+		max-height: none;
+	}
 }
 /*420*/ 
 
@@ -1039,6 +1131,11 @@
 	}
 	.about-us__list li{
 		font-size: 5rem;
+	}
+	.noscroll{
+		.header{
+			background-color: var(--grey-bg);
+		}
 	}
 }
 /*360px*/
