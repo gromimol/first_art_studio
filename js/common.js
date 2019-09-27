@@ -8,6 +8,13 @@ $(document).ready(function () {
 		$('.menu-block').toggleClass('active');
 	});
 
+
+	// Accordeon
+	$('.accordeon__title').on('click',function () {
+		$(this).closest('.accordeon').toggleClass('active');
+		$(this).closest('.accordeon').find('.accordeon__content').slideToggle();
+	})
+
 	// slider
 	$('.case-slider').slick({
 		appendArrows: '.case-slider-arrows',

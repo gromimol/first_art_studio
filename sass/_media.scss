@@ -60,6 +60,30 @@
 	.contact__title{
 		font-size: 4rem;
 	}
+	.input-wrapper span{
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.calculator__form__content__right .input-wrapper{
+		transform: translateY(57px);
+	}
+	.textarea{
+		height: 193px;
+		font-size: 16px;
+	}
+	.calculator__total{
+		justify-content: center;
+	}
+	.calculator__total__title{
+		font-size: 2.2rem;
+	}
+	.calculator__total__summa{
+		font-size: 3.5rem;
+	}
+	.agree label,
+	.notice{
+		font-size: 1.1rem;
+	}
 }
 /*1400*/ 
 
@@ -171,6 +195,12 @@
 		min-width: 1000px;
 		flex-wrap: nowrap;
 	}
+	.radio label, .checkbox label{
+		font-size: 1.5rem;
+	}
+	.accordeon__title{
+		font-size: 1.7rem;
+	}
 }
 /*1360*/ 
 
@@ -279,6 +309,45 @@
 	.advantage-slider__content p{
 		font-size: 12px;
 	}
+	.title h4{
+		font-size: 2rem;
+	}
+	.accordeon__title{
+		font-size: 1.9rem;
+	}
+	.radio label, .checkbox label,
+	.accordeon__content p{
+		font-size: 1.7rem;
+	}
+	.calculator__form__content,
+	.calculator__form__title{
+		flex-wrap: wrap;
+	}
+	.calculator__form__title h3, .calculator__form__title .notice, .calculator__form__content__left, .calculator__form__content__right{
+		width: 100%;
+	}
+	.calculator__form__content__left{
+		margin-bottom: 30px;
+	}
+	.calculator__form__content__right .input-wrapper{
+		transform: translateY(0);
+	}
+	.calculator__form__title{
+		text-align: center;
+		h3{
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+	}
+	.notice{
+		font-size: 14px;
+	}
+	.agree label{
+		font-size: 12px;
+	}
+	.calculator__total__summa{
+		font-weight: 500;
+	}
 }
 /*1024*/ 
 @media(max-width: 768px){
@@ -327,6 +396,36 @@
 	}
 	.service-slider .slick-list{
 		margin-top: -120px;
+	}
+	.calculator__price{
+		& > .container--lg{
+			flex-wrap: wrap;
+		}
+	}
+	.calculator__price__item,
+	.calculator__inputs,
+	.calculator__total{
+		width: 100%;
+	}
+	.accordeon__title{
+		font-size: 18px;
+	}
+	.radio label, .checkbox label,
+	.accordeon__content p{
+		font-size: 15px;
+	}
+	.calculator__form{
+		flex-direction: column;
+	}
+	.calculator__total__title{
+		font-size: 16px;
+	}
+	.calculator__total__summa{
+		font-size: 30px;
+	}
+	.calculator__inputs,
+	.calculator__total{
+		padding: 30px 15px;
 	}
 }
 /*768*/ 
@@ -637,6 +736,25 @@
 	}
 	.advantages-slider-arrows{
 		margin-top: 40px;
+	}
+	.title h4{
+		font-size: 18px;
+		br{
+			display: none;
+		}
+	}
+	.accordeon__title{
+		font-size: 16px;
+	}
+	.radio label, .checkbox label,
+	.accordeon__content p{
+		font-size: 14px;
+	}
+	.inner-top__content{
+		height: 24em;
+		.h1{
+			font-size: 6.5rem;
+		}
 	}
 } 
 /*767*/ 

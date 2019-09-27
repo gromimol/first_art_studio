@@ -1,0 +1,34 @@
+/*inner-top*/ 
+.inner-top{
+	margin: 0 0 4.375em;
+}
+.inner-top__content{
+	height: 14.5em;
+	padding-left: 4.375em;
+	position: relative;
+	.h1{
+		display: inline-block;
+		font-size: 4rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 1.1;
+		background: url('../img/bg/text-bg.jpg') 70% 30% no-repeat;
+		-webkit-background-clip: text;
+		-o-background-clip: text;
+		-moz-background-clip: text;
+		-ms-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+		position: relative;
+		transform: translateY(25%);
+		z-index: 3;
+	}
+}
+.inner-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
