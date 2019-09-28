@@ -397,7 +397,8 @@
 	.calculator__total__summa{
 		font-weight: 500;
 	}
-	.individual-descr__item h4{
+	.individual-descr__item h4,
+	.service__item__title{
 		font-size: 2.4rem;
 	}
 	.individual-descr__item p{
@@ -409,6 +410,10 @@
 	.difference__descr p,
 	.sort li a{
 		font-size: 1.8rem;
+	}
+	.service__item__descr,
+	.service__item__data{
+		font-size: 1.2rem;
 	}
 }
 /*1024*/ 
@@ -584,6 +589,18 @@
 		font-size: 12px;
 		padding: 8px 15px;
 		border-color: var(--yellow);
+	}
+	.service__list li{
+		width: 50%;
+	}
+	.service__item{
+		padding: 3.5em;
+	}
+	.service__item__title{
+		font-size: 4rem;
+	}
+	.service__item__descr, .service__item__data{
+		font-size: 2.4rem;
 	}
 }
 /*768*/ 
@@ -1068,13 +1085,15 @@
 	.difference__descr h2{
 		font-size: 8rem;
 	}
-	.about-us__list li{
+	.about-us__list li,
+	.service__list li{
 		width: 100%;
 	}
 	.about-us__list li{
 		font-size: 4rem;
 	}
-	.inner-top__content .h1{
+	.inner-top__content .h1,
+	.service__item__title{
 		font-size: 7rem;
 	}
 	.portfolio__item{
@@ -1085,6 +1104,18 @@
 	}
 	.case-slider__item--lg .slider-img{
 		max-height: none;
+	}
+	.service__item{
+		padding: 4.5em;
+	}
+	.service__item__title{
+		margin-bottom: .5em;
+	}
+	.service__item__descr, .service__item__data{
+		font-size: 3.8rem;
+	}
+	.choose-service{
+		padding-top: 30px;
 	}
 }
 /*420*/ 
