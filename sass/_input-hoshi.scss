@@ -3,6 +3,16 @@
 	z-index: 1;
 	display: block;
 	margin-bottom: 2.5em;
+	&--black{
+		.input__label,
+		.input__field--hoshi{
+			color: var(--black);
+		}
+		.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+		.input--filled + .input__label--hoshi .input__label-content--hoshi {
+			color: rgba(#000, .7);
+		}
+	}
 }
 
 .input__field {

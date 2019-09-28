@@ -132,6 +132,7 @@ img{
 	}
 	
 	.title{
+		width: 80%;
 		margin-bottom: 0;
 		position: relative;
 		z-index: 1;
@@ -219,6 +220,7 @@ h4{
 	&--black{
 		background-color: var(--black);
 		color: #fff;
+		border-color: var(--black);
 		&:hover{
 			border-color: var(--black);
 			background-color: #fff;

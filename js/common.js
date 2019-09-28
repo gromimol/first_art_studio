@@ -6,7 +6,17 @@ $(document).ready(function () {
 		$('body').toggleClass('noscroll');
 		$(this).toggleClass('active');
 		$('.menu-block').toggleClass('active');
+		$('.callback').toggleClass('hidden');
 	});
+
+	$('.callback').on('click', function (e) {
+		e.preventDefault();
+
+		$('body').toggleClass('noscroll');
+		$(this).toggleClass('active');
+		$('.callback-block').toggleClass('active');
+		$('.menu-btn').toggleClass('hidden');
+	})
 
 
 	// Accordeon

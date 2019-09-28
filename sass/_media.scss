@@ -250,6 +250,37 @@
 	.tags__list li a{
 		font-size: 1.1rem;
 	}
+	.article-body ol,
+	.article-body ul{
+		margin: 30px 0;
+	}
+	.article-body p,
+	.article-body ol li,
+	.article-body ul li{
+		font-size: 16px;
+	}
+	.quote,
+	.quote p{
+		font-size: 18px;
+	}
+	.notice-lg{
+		font-size: 22px;
+	}
+	.project-preview__top__title{
+		font-size: 30px;
+	}
+	.project__options__title{
+		font-size: 12px;
+	}
+	.project__options__name{
+		font-size: 14px;
+	}
+	.project-preview__item h3{
+		font-size: 24px;
+	}
+	.project-preview__item p{
+		font-size: 16px;
+	}
 }
 /*1360*/ 
 
@@ -372,7 +403,9 @@
 	.calculator__form__title{
 		flex-wrap: wrap;
 	}
-	.calculator__form__title h3, .calculator__form__title .notice, .calculator__form__content__left, .calculator__form__content__right{
+	.calculator__form__title h3, .calculator__form__title .notice, .calculator__form__content__left, .calculator__form__content__right,
+	.address-block,
+	.feedback{
 		width: 100%;
 	}
 	.calculator__form__content__left{
@@ -388,7 +421,8 @@
 			margin-bottom: 10px;
 		}
 	}
-	.notice{
+	.notice,
+	.address-block__title{
 		font-size: 14px;
 	}
 	.agree label{
@@ -398,10 +432,12 @@
 		font-weight: 500;
 	}
 	.individual-descr__item h4,
-	.service__item__title{
+	.service__item__title,
+	.address-block h4{
 		font-size: 2.4rem;
 	}
-	.individual-descr__item p{
+	.individual-descr__item p,
+	.studio-name{
 		font-size: 2rem;
 	}
 	.difference__descr h2{
@@ -414,6 +450,35 @@
 	.service__item__descr,
 	.service__item__data{
 		font-size: 1.2rem;
+	}
+	.our-contact-block{
+		flex-direction: column;
+	}
+	.address-block__content{
+		font-size: 18px;
+	}
+	.address-block{
+		margin-bottom: 40px;
+	}
+	.feedback .calculator__inputs{
+		padding: 20px;
+	}
+	.callback-block .menu-block__decor{
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.callback-block .pink-circle{
+		width: 50em;
+		height: 50em;
+	}
+	.callback-block .yellow-circle{
+		top: 70%;
+	}
+	.callback-block .menu__title{
+		text-align: right;
+	}
+	.callback-block .menu__title br{
+		display: block;
 	}
 }
 /*1024*/ 
@@ -435,6 +500,10 @@
 			font-size: 12px;
 		}
 	}
+	.callback-block .yellow-circle{
+		display: none;
+	}
+
 }
 /*990*/ 
 @media(max-width: 768px){
@@ -506,7 +575,8 @@
 		font-size: 15px;
 	}
 	.calculator__form,
-	.difference__content{
+	.difference__content,
+	.callback-block .container{
 		flex-direction: column;
 	}
 	.calculator__total__title{
@@ -596,11 +666,32 @@
 	.service__item{
 		padding: 3.5em;
 	}
-	.service__item__title{
+	.service__item__title,
+	.article-top__content h1{
 		font-size: 4rem;
 	}
-	.service__item__descr, .service__item__data{
+	.service__item__descr, .service__item__data,
+	.article-top__content .date{
 		font-size: 2.4rem;
+	}
+	.callback-block .menu-block__decor{
+		justify-content: center;
+		align-items: center;
+	}
+	.callback-block .menu__title{
+		font-size: 8rem;
+		br{
+			display: none;
+		}
+	}
+	.callback-block{
+		overflow-y: auto;
+	}
+	.callback-block .menu-block__content{
+		margin-bottom: 10px;
+	}
+	.callback-block{
+		padding-top: 100px;
 	}
 }
 /*768*/ 
@@ -1009,7 +1100,8 @@
 		margin-top: 40px;
 	}
 	.aside__title,
-	.aside__menu{
+	.aside__menu,
+	.studio-name{
 		font-size: 15px;
 	}
 	.aside__item{
@@ -1017,6 +1109,79 @@
 	}
 	.tags__list li a{
 		font-size: 12px;
+	}
+	.our-contact{
+		padding-top: 0;
+	}
+	.address-block{
+		padding: 20px;
+		h4{
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+	.address-block__content{
+		font-weight: 300;
+	}
+	.address-block__line:not(:last-child){
+		margin-bottom: 20px;
+	}
+	.map{
+		iframe{
+			height: 200px !important;
+		}
+	}
+	.feedback__bottom{
+		margin-top: 30px;
+		flex-direction: column;
+		.btn--black{
+			transform: translateY(50%);
+		}
+	}
+	.quote{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px;
+		&::before{
+			width: 30px;
+			height: 30px;
+			margin: 0 0 15px 0;
+		}
+	}
+	.releated-articles .title{
+		margin-bottom: 20px;
+	}
+	.article-top__row{
+		flex-direction: column-reverse;
+	}
+	.article-top__content .date{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.article-top__content h1{
+		font-size: 24px;max-width: 100%;
+	}
+	.project__options {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.project__options__item{
+		margin-bottom: 20px;
+	}
+	.project__options__title{
+		font-size: 14px;
+	}
+	.project__options__name{
+		font-size: 16px;
+	}
+	.project-preview__top__title{
+		font-size: 6rem;
+	}
+	.project__options__name li{
+		line-height: 1.5;
+	}
+	.project-preview__item{
+		margin-bottom: 30px;
 	}
 } 
 /*767*/ 

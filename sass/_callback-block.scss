@@ -1,0 +1,68 @@
+/*callback-block*/ 
+.callback-block{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #edf0f5;
+	padding: 12.5em 0 0;
+	overflow: hidden;
+	transform: scale(3);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 10;
+	transition: all .5s;
+	&.active{
+		transform: scale(1);
+		opacity: 1;
+		visibility: visible;
+	}
+	.container{
+		height: 100%;
+	}
+	.menu__title{
+		font-size: 6.5rem;
+		background-position: 50% 0;
+	}
+	.menu-block__decor{
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 3em;
+	}
+	.pink-circle{
+		background-color: var(--blue);
+		width: 48em;
+		height: 48em;
+		bottom: -20em;
+		right: -8em;
+	}
+	.yellow-circle{
+		top: 60%;
+	}
+	.menu-block__content{
+		max-width: 560px;
+		form{
+			width: 100%;
+		}
+		.social{
+			margin-top: 5em;
+			li{
+				a{
+					&:hover{
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.btn{
+		padding: 1.2em 4em;
+	}
+}
+.callback-form__title{
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--black);
+	margin-bottom: 20px;
+}
