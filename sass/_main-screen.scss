@@ -41,7 +41,7 @@
 		position: relative;
 		z-index: 2;
 	}
-	h2{
+	.h2{
 		font-size: 3rem;
 		font-weight: 300;
 		position: relative;
@@ -87,7 +87,7 @@
 			margin-right: 5em;
 		}
 		&:hover{
-			color: var(--red);
+			text-decoration: underline;
 		}
 	}
 }

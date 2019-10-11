@@ -1,5 +1,9 @@
 /*callback-block*/ 
-.callback-block{
+.popup{
+
+}
+.callback-block,
+.order-block{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -46,7 +50,7 @@
 			width: 100%;
 		}
 		.social{
-			margin-top: 5em;
+			margin-top: 3em;
 			li{
 				a{
 					&:hover{
@@ -58,6 +62,11 @@
 	}
 	.btn{
 		padding: 1.2em 4em;
+	}
+	.agree{
+		color:var(--black);
+		padding-top: 0;
+		margin-bottom: 2em;
 	}
 }
 .callback-form__title{

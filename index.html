@@ -44,7 +44,7 @@
 					<div class="main-screen__content">
 						<div class="main-screen__title">
 							<h1 class="h1">First Art Studio </h1>
-							<h2>Разработка сайтов, интернет-магазинов<br> и продвижение</h2>
+							<span class="h2">Разработка сайтов, интернет-магазинов<br> и продвижение</span>
 							<img src="img/bg/circles_rainbow.png" alt="" class="circles">
 							<img src="img/bg/dots.png" alt="" class="dots">
 						</div>
@@ -59,6 +59,9 @@
 						</div>
 
 						<ul class="social flex flex--center">
+							<li class="mobile"><a href="#"><img src="img/icons/viber.svg" alt=""></a></li>
+							<li class="mobile"><a href="#"><img src="img/icons/telegram.png" alt=""></a></li>
+							<li class="mobile"><a href="#"><img src="img/icons/whatsup.svg" alt=""></a></li>
 							<li><a href="#"><img src="img/icons/dribl.png" alt=""></a></li>
 							<li><a href="#"><img src="img/icons/behance.png" alt=""></a></li>
 						</ul>
@@ -139,7 +142,7 @@
 				<div class="container">
 					<div class="banner__title">First Art Studio. </div>
 					<div class="banner__subtitle">
-						<h3>Если вас нет в интернете - вас нет в бизнесе.</h3>
+						<span class="h3">Если вас нет в интернете - вас нет в бизнесе.</span>
 					</div>
 					<div class="banner-btn-container text-right">
 						<a href="#" class="btn">
@@ -315,14 +318,14 @@
 
 					<div class="statistic__content flex flex--center flex--between">
 						<div class="statistic__descr">
-							<h3>
+							<h2>
 								Создание сайтов <br>
 								в Москве
-							</h3>
+							</h2>
 							<p>
 								В маркетинге существует такое определение, как уровень уникальности и необычности торгового предложения.
 							</p>
-							<a href="#" class="btn btn--lt">
+							<a href="#" class="btn btn--lt js-more">
 								Подробнее
 							</a>
 						</div>
@@ -482,6 +485,7 @@
 							<li class="drop-li">
 								<a href="service.html">УСЛУГИ</a>
 								<ul class="submenu">
+									<li class="mobile"><a href="#">Все услуги</a></li>
 									<li><a href="#">Разработка сайтов</a></li>
 									<li><a href="#">Разработка сайтов-каталогов</a></li>
 									<li><a href="#">Разработка интернет-магазинов</a></li>
@@ -554,6 +558,15 @@
 
 								</span>
 
+								<div class="agree">
+									<input type="checkbox" id="agree" checked="">
+									<label for="agree">
+										<p>
+											Соглашаюсь на обработку персональных данных в соответствии с Политикой конфиденциальности
+										</p>
+									</label>
+								</div>
+
 								<input type="submit" class="btn btn--black" value="Отправить">
 							</div>
 						</form>
@@ -577,12 +590,52 @@
 					<div class="pink-circle"></div>
 				</div>
 			</div>
+
+			<div class="text-popup popup">
+				<span class="close"></span>
+				<div class="text-popup__content">
+					<h2>Заголовок h2</h2>
+					<h3>Заголовок h3</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam debitis eum, mollitia dignissimos non aut exercitationem nam placeat in libero!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt at dolore consectetur atque vitae fugiat aut excepturi! At nihil tempora, inventore, necessitatibus, repellat nemo magnam dolorum vel sed similique suscipit modi, exercitationem facere. Amet, magni id quo veniam adipisci, aut quibusdam magnam delectus distinctio odit praesentium vitae laborum quae illo?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quia!
+					</p>
+				</div>
+			</div>
 		</footer>
 	</div><!-- end wrapper -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="js/spinscrement.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/common.js"></script>
+
+<script>
+	// Анимация чисел
+	var show = true;
+    var countbox = ".statistic";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.statistic-list .count').spincrement({
+                thousandSeparator: "",
+                duration: 2000
+            });
+             
+            show = false;
+        }
+    });
+</script>
 </body>
 </html>

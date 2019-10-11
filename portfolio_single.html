@@ -43,9 +43,9 @@
 			<section class="inner-top">
 				<div class="container--fluid no-padding">
 					<div class="inner-top__content">
-						<h1 class="h1">
+						<h2 class="h1">
 							Примеры<br> сайтов-<br> каталогов
-						</h1>
+						</h2>
 						<img src="img/bg/blue_bg-2.png" alt="" class="inner-bg">
 					</div>
 				</div>
@@ -423,7 +423,7 @@
 								<div class="rate-warranty">Гарантийное обслуживание - 1 месяц</div>
 							</div>
 							<div class="rate-btn">
-								<a href="#" class="btn btn--lt">
+								<a href="#" class="btn btn--lt js-order">
 									Заказать
 								</a>
 							</div>
@@ -447,7 +447,7 @@
 								<div class="rate-warranty">Гарантийное обслуживание - 1 месяц</div>
 							</div>
 							<div class="rate-btn">
-								<a href="#" class="btn btn--blue btn--lt">
+								<a href="#" class="btn btn--blue btn--lt js-order">
 									Заказать
 								</a>
 							</div>
@@ -471,7 +471,7 @@
 								<div class="rate-warranty">Гарантийное обслуживание - 1 месяц </div>
 							</div>
 							<div class="rate-btn">
-								<a href="#" class="btn btn--lt">
+								<a href="#" class="btn btn--lt js-order">
 									Заказать
 								</a>
 							</div>
@@ -516,7 +516,7 @@
 			<section class="case case--padding">
 				<div class="container--fluid">
 					<div class="title text-center">
-						<h2>Некоторые реализованные проекты</h2>
+						<div class="h2">Некоторые реализованные проекты</div>
 					</div>
 					<div class="case-row flex flex--center">
 						<div class="case-slider-arrows"></div>
@@ -579,17 +579,37 @@
 			<section class="reviews">
 				<div class="container">
 					<div class="title text-center">
-						<h2>Отзывы о нас</h2>
+						<div class="h2">Отзывы о нас</div>
 					</div>
 
 					<div class="reviews-container">
 						<ul class="reviews__list flex">
-							<li><a href="#" class="reviews__item"><img src="img/photos/document.jpg" alt=""></a></li>
-							<li><a href="#" class="reviews__item"><img src="img/photos/document.jpg" alt=""></a></li>
-							<li><a href="#" class="reviews__item"><img src="img/photos/document.jpg" alt=""></a></li>
-							<li><a href="#" class="reviews__item"><img src="img/photos/document.jpg" alt=""></a></li>
-							<li><a href="#" class="reviews__item"><img src="img/photos/document.jpg" alt=""></a></li>
-							
+							<li>
+								<a href="img/photos/blagodarnost-shkola-akvareli.jpg" class="reviews__item" data-fancybox="gallery">
+									<img src="img/photos/document.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="img/photos/blagodarnost-bolshevichka.jpg" class="reviews__item" data-fancybox="gallery">
+									<img src="img/photos/document.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="img/photos/blagodarnost-shkola-akvareli.jpg" class="reviews__item" data-fancybox="gallery">
+									<img src="img/photos/document.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="img/photos/blagodarnost-bolshevichka.jpg" class="reviews__item" data-fancybox="gallery">
+									<img src="img/photos/document.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="img/photos/blagodarnost-shkola-akvareli.jpg" class="reviews__item" data-fancybox="gallery">
+									<img src="img/photos/document.jpg" alt="">
+								</a>
+							</li>
+
 						</ul>
 					</div>
 
@@ -723,6 +743,7 @@
 							<li class="drop-li">
 								<a href="service.html">УСЛУГИ</a>
 								<ul class="submenu">
+									<li class="mobile"><a href="#">Все услуги</a></li>
 									<li><a href="#">Разработка сайтов</a></li>
 									<li><a href="#">Разработка сайтов-каталогов</a></li>
 									<li><a href="#">Разработка интернет-магазинов</a></li>
@@ -795,6 +816,15 @@
 
 								</span>
 
+								<div class="agree">
+									<input type="checkbox" id="agree" checked="">
+									<label for="agree">
+										<p>
+											Соглашаюсь на обработку персональных данных в соответствии с Политикой конфиденциальности
+										</p>
+									</label>
+								</div>
+
 								<input type="submit" class="btn btn--black" value="Отправить">
 							</div>
 						</form>
@@ -818,12 +848,106 @@
 					<div class="pink-circle"></div>
 				</div>
 			</div>
+
+			<!-- Заказать -->
+			<div class="order-block popup">
+				<a href="#" class="close"></a>
+				<div class="container flex flex--between">
+					<div class="menu-block__content">
+						<form action="#">
+							<div class="callback-form">
+								<div class="callback-form__title">Обратная связь</div>
+								<span class="input input--black input--hoshi">
+									<!-- Класс input--error для ошибки при валидации -->
+									<input class="input__field input__field--hoshi" type="text" id="input-21">
+
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-21">
+										<span class="input__label-content input__label-content--hoshi">Ваше имя:</span>
+									</label>
+
+								</span>
+
+								<span class="input input--black input--hoshi">
+
+									<input class="input__field input__field--hoshi" type="text" id="input-22">
+
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-22">
+										<span class="input__label-content input__label-content--hoshi">Телефон:</span>
+									</label>
+
+								</span>
+
+								<span class="input input--black input--hoshi">
+
+									<input class="input__field input__field--hoshi" type="text" id="input-22">
+
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-22">
+										<span class="input__label-content input__label-content--hoshi">Ваш E-mail:</span>
+									</label>
+
+								</span>
+
+								<div class="agree">
+									<input type="checkbox" id="agree" checked="">
+									<label for="agree">
+										<p>
+											Соглашаюсь на обработку персональных данных в соответствии с Политикой конфиденциальности
+										</p>
+									</label>
+								</div>
+
+								<input type="submit" class="btn btn--black" value="Отправить">
+							</div>
+						</form>
+
+					</div>
+					<!-- /.menu-block__content -->
+
+					<div class="menu-block__decor">
+						<div class="menu__title">
+							Закажите<br>
+							у нас
+						</div>
+						<div class="yellow-circle"></div>
+						
+					</div>
+					<div class="pink-circle"></div>
+				</div>
+			</div>
 		</footer>
 	</div><!-- end wrapper -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="js/spinscrement.min.js"></script>
 <script src="js/slick.min.js"></script>
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 <script src="js/common.js"></script>
+
+<script>
+	// Анимация чисел
+	var show = true;
+    var countbox = ".statistic";
+    $(window).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.statistic-list .count').spincrement({
+                thousandSeparator: "",
+                duration: 2000
+            });
+             
+            show = false;
+        }
+    });
+</script>
 </body>
 </html>

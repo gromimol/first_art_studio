@@ -16,7 +16,31 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		$('.callback-block').toggleClass('active');
 		$('.menu-btn').toggleClass('hidden');
+	});
+
+	$('.js-order').on('click',function (e) {
+		e.preventDefault();
+
+		$('body').toggleClass('noscroll');
+		$(this).toggleClass('active');
+		$('.order-block').toggleClass('active');
 	})
+
+	$('.js-more').on('click',function (e) {
+		e.preventDefault();
+
+		$('body').addClass('noscroll');
+		$('.text-popup').addClass('active');
+	});
+
+	$('.close').on('click',function (e) {
+		e.preventDefault();
+
+		$('body').removeClass('noscroll');
+		$('.popup').removeClass('active');
+	})
+
+	
 
 
 	// Accordeon
