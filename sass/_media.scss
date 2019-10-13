@@ -293,6 +293,9 @@
 	.about-top__img{
 		height: 100%;
 	}
+	.feedback__bottom{
+		flex-direction: column;
+	}
 }
 /*1360*/ 
 
@@ -1108,7 +1111,8 @@
 	.rate-price{
 		padding: 20px 15px;
 	}
-	.rate-price .old-price, .rate-price .current-price{
+	.rate-price .old-price, .rate-price .current-price,
+	.difference__descr__title{
 		font-size: 24px;
 	}
 	.rate__list li,
@@ -1260,6 +1264,10 @@
 	}
 	.input{
 		margin-bottom: 20px;
+	}
+	.social img{
+		max-width: 100%;
+		width: 18px;
 	}
 } 
 /*767*/ 
